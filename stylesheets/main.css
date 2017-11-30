@@ -13,4 +13,97 @@ html, body {
 
 body {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(rgb(62, 62, 62), black);
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 800px;
+    height: 800px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    width: 800px;
+    height: 160px;
+}
+
+.circle {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.northwest {
+    animation: shift-right 4s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite alternate;
+}
+@keyframes shift-right {
+    8% {
+        transform: translate(0, 0)
+    }
+
+    92% {
+        transform: translate(640px, 0)
+    }
+    
+    100% {
+        transform: translate(640px, 0)        
+    }
+}
+
+.northeast {
+    animation: shift-down 4s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite alternate;
+}
+@keyframes shift-down {
+    8% {
+        transform: translate(0, 0)
+    }
+
+    92% {
+        transform: translate(0, 640px)
+    }
+    
+    100% {
+        transform: translate(0, 640px)        
+    }
+}
+
+.southwest {
+    animation: shift-up 4s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite alternate;
+}
+@keyframes shift-up {
+    8% {
+        transform: translate(0, 0)
+    }
+
+    92% {
+        transform: translate(0, -640px)
+    }
+    
+    100% {
+        transform: translate(0, -640px)        
+    }
+}
+
+.southeast {
+    animation: shift-left 4s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite alternate;
+}
+@keyframes shift-left {
+    8% {
+        transform: translate(0, 0)
+    }
+
+    92% {
+        transform: translate(-640px, 0)
+    }
+
+    100% {
+        transform: translate(-640px, 0)        
+    }
 }
