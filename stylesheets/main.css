@@ -40,82 +40,162 @@ body {
     background-color: rgba(0, 0, 0, 0.9);
 }
 
-.northwest {
+.one {
     animation: shift-right 4s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite alternate;
 }
 @keyframes shift-right {
     8% {
         transform: translate(0, 0);
-        background-color: black;
+        background-color: rgba(0, 0, 0, 0.9);
     }
 
     92% {
         transform: translate(640px, 0);
-        background-color: white;        
+        background-color: rgba(255, 255, 255, 0.9);        
     }
     
     100% {
         transform: translate(640px, 0);        
-        background-color: white;
+        background-color: rgba(255, 255, 255, 0.9);
     }
 }
 
-.northeast {
+.three {
     animation: shift-down 4s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite alternate;
 }
 @keyframes shift-down {
     8% {
         transform: translate(0, 0);
-        background-color: black;
+        background-color: rgba(0, 0, 0, 0.9);
     }
 
     92% {
         transform: translate(0, 640px);
-        background-color: white;
+        background-color: rgba(255, 255, 255, 0.9);
     }
     
     100% {
         transform: translate(0, 640px);
-        background-color: white;
+        background-color: rgba(255, 255, 255, 0.9);
     }
 }
 
-.southwest {
+.six {
     animation: shift-up 4s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite alternate;
 }
 @keyframes shift-up {
     8% {
         transform: translate(0, 0);
-        background-color: black;
+        background-color: rgba(0, 0, 0, 0.9);
     }
 
     92% {
         transform: translate(0, -640px);
-        background-color: white;        
+        background-color: rgba(255, 255, 255, 0.9);        
     }
     
     100% {
         transform: translate(0, -640px);
-        background-color: white;
+        background-color: rgba(255, 255, 255, 0.9);
     }
 }
 
-.southeast {
+.eight {
     animation: shift-left 4s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite alternate;
 }
 @keyframes shift-left {
     8% {
         transform: translate(0, 0);
-        background-color: black;
+        background-color: rgba(0, 0, 0, 0.9);
     }
 
     92% {
         transform: translate(-640px, 0);
-        background-color: white;        
+        background-color: rgba(255, 255, 255, 0.9);        
     }
 
     100% {
         transform: translate(-640px, 0);
-        background-color: white;
+        background-color: rgba(255, 255, 255, 0.9);
+    }
+}
+
+.two {
+    animation: shift-right-down 4s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite alternate;
+}
+@keyframes shift-right-down {
+    8% {
+        transform: translate(0, 0);
+        background-color: rgba(0, 0, 0, 0.9);
+    }
+
+    92% {
+        transform: translate(320px, 320px);
+        background-color: rgba(255, 255, 255, 0.9);        
+    }
+    
+    100% {
+        transform: translate(320px, 320px);        
+        background-color: rgba(255, 255, 255, 0.9);
+    }
+}
+
+.four {
+    animation: shift-right-up 4s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite alternate;
+}
+@keyframes shift-right-up {
+    8% {
+        transform: translate(0, 0);
+        background-color: rgba(0, 0, 0, 0.9);
+    }
+
+    92% {
+        transform: translate(320px, -320px);
+        background-color: rgba(255, 255, 255, 0.9);
+    }
+    
+    100% {
+        transform: translate(320px, -320px);
+        background-color: rgba(255, 255, 255, 0.9);
+    }
+}
+
+.five {
+    animation: shift-left-down 4s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite alternate;
+}
+@keyframes shift-left-down {
+    8% {
+        transform: translate(0, 0);
+        background-color: rgba(0, 0, 0, 0.9);
+    }
+
+    92% {
+        transform: translate(-320px, 320px);
+        background-color: rgba(255, 255, 255, 0.9);        
+    }
+    
+    100% {
+        transform: translate(-320px, 320px);
+        background-color: rgba(255, 255, 255, 0.9);
+    }
+}
+
+.seven {
+    animation: shift-left-up 4s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite alternate;
+}
+@keyframes shift-left-up {
+    8% {
+        transform: translate(0, 0);
+        background-color: rgba(0, 0, 0, 0.9);
+    }
+
+    92% {
+        transform: translate(-320px, -320px);
+        background-color: rgba(255, 255, 255, 0.9);        
+    }
+
+    100% {
+        transform: translate(-320px, -320px);
+        background-color: rgba(255, 255, 255, 0.9);
     }
 }
