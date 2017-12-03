@@ -33,6 +33,31 @@ body {
     height: 160px;
 }
 
+.button-zone {
+    width: 160px;
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+ .button {
+     width: 160px;
+     height: 40px;
+     border-bottom-left-radius: 25%100%;
+     border-bottom-right-radius: 25%100%;
+     border-top-left-radius: 25%100%;
+     border-top-right-radius: 25%100%;
+     background-color: black;
+     color: rgb(140, 140, 140);
+     font-family: 'Montserrat', sans-serif;
+     font-size: 20px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin: 5px 0;
+ }
+
 .circle {
     width: 160px;
     height: 160px;
