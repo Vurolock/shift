@@ -15,7 +15,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: radial-gradient(rgb(62, 62, 62), black);
+    background: radial-gradient(rgb(62, 62, 62) 10%, black);
 }
 
 .box {
@@ -41,22 +41,34 @@ body {
     justify-content: center;
 }
 
- .button {
-     width: 160px;
-     height: 40px;
-     border-bottom-left-radius: 25%100%;
-     border-bottom-right-radius: 25%100%;
-     border-top-left-radius: 25%100%;
-     border-top-right-radius: 25%100%;
-     background-color: black;
-     color: rgb(140, 140, 140);
-     font-family: 'Montserrat', sans-serif;
-     font-size: 20px;
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     margin: 5px 0;
- }
+.button {
+    width: 160px;
+    height: 40px;
+    border-bottom-left-radius: 25%100%;
+    border-bottom-right-radius: 25%100%;
+    border-top-left-radius: 25%100%;
+    border-top-right-radius: 25%100%;
+    background-color: black;
+    color: rgb(160, 160, 160);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4px 0;
+}
+
+.button:hover {
+    border: 2px solid rgb(160, 160, 160);
+    cursor: pointer;
+}
+
+.button-text {
+    width: 160px;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
 
 .circle {
     width: 160px;
@@ -66,119 +78,71 @@ body {
 }
 
 .one {
-    animation: shift-right 4s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite alternate;
+    animation: shift-right 5s cubic-bezier(0.9,-0.25,0.1,1.50) infinite alternate;
 }
 @keyframes shift-right {
-    8% {
+    10% {
         transform: translate(0, 0);
         background-color: rgba(0, 0, 0, 0.9);
     }
-
-    92% {
+    90% {
         transform: translate(640px, 0);
         background-color: rgba(255, 255, 255, 0.9);        
     }
-    
     100% {
         transform: translate(640px, 0);        
         background-color: rgba(255, 255, 255, 0.9);
     }
 }
 
-.three {
-    animation: shift-down 4s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite alternate;
-}
-@keyframes shift-down {
-    8% {
-        transform: translate(0, 0);
-        background-color: rgba(0, 0, 0, 0.9);
-    }
-
-    92% {
-        transform: translate(0, 640px);
-        background-color: rgba(255, 255, 255, 0.9);
-    }
-    
-    100% {
-        transform: translate(0, 640px);
-        background-color: rgba(255, 255, 255, 0.9);
-    }
-}
-
-.six {
-    animation: shift-up 4s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite alternate;
-}
-@keyframes shift-up {
-    8% {
-        transform: translate(0, 0);
-        background-color: rgba(0, 0, 0, 0.9);
-    }
-
-    92% {
-        transform: translate(0, -640px);
-        background-color: rgba(255, 255, 255, 0.9);        
-    }
-    
-    100% {
-        transform: translate(0, -640px);
-        background-color: rgba(255, 255, 255, 0.9);
-    }
-}
-
-.eight {
-    animation: shift-left 4s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite alternate;
-}
-@keyframes shift-left {
-    8% {
-        transform: translate(0, 0);
-        background-color: rgba(0, 0, 0, 0.9);
-    }
-
-    92% {
-        transform: translate(-640px, 0);
-        background-color: rgba(255, 255, 255, 0.9);        
-    }
-
-    100% {
-        transform: translate(-640px, 0);
-        background-color: rgba(255, 255, 255, 0.9);
-    }
-}
-
 .two {
-    animation: shift-right-down 4s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite alternate;
+    animation: shift-right-down 5s cubic-bezier(0.9,-0.25,0.1,1.50) infinite alternate;
 }
 @keyframes shift-right-down {
-    8% {
+    10% {
         transform: translate(0, 0);
         background-color: rgba(0, 0, 0, 0.9);
     }
-
-    92% {
+    90% {
         transform: translate(320px, 320px);
         background-color: rgba(255, 255, 255, 0.9);        
     }
-    
     100% {
         transform: translate(320px, 320px);        
         background-color: rgba(255, 255, 255, 0.9);
     }
 }
 
-.four {
-    animation: shift-right-up 4s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite alternate;
+.three {
+    animation: shift-down 5s cubic-bezier(0.9,-0.25,0.1,1.50) infinite alternate;
 }
-@keyframes shift-right-up {
-    8% {
+@keyframes shift-down {
+    10% {
         transform: translate(0, 0);
         background-color: rgba(0, 0, 0, 0.9);
     }
+    90% {
+        transform: translate(0, 640px);
+        background-color: rgba(255, 255, 255, 0.9);
+    }
+    100% {
+        transform: translate(0, 640px);
+        background-color: rgba(255, 255, 255, 0.9);
+    }
+}
 
-    92% {
+.four {
+    animation: shift-right-up 5s cubic-bezier(0.9,-0.25,0.1,1.50) infinite alternate;
+}
+@keyframes shift-right-up {
+    10% {
+        transform: translate(0, 0);
+        background-color: rgba(0, 0, 0, 0.9);
+    }
+    90% {
         transform: translate(320px, -320px);
         background-color: rgba(255, 255, 255, 0.9);
     }
-    
     100% {
         transform: translate(320px, -320px);
         background-color: rgba(255, 255, 255, 0.9);
@@ -186,41 +150,77 @@ body {
 }
 
 .five {
-    animation: shift-left-down 4s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite alternate;
+    animation: shift-left-down 5s cubic-bezier(0.9,-0.25,0.1,1.50) infinite alternate;
 }
 @keyframes shift-left-down {
-    8% {
+    10% {
         transform: translate(0, 0);
         background-color: rgba(0, 0, 0, 0.9);
     }
-
-    92% {
+    90% {
         transform: translate(-320px, 320px);
         background-color: rgba(255, 255, 255, 0.9);        
     }
-    
     100% {
         transform: translate(-320px, 320px);
+        background-color: rgba(255, 255, 255, 0.9);
+    }
+}
+
+.six {
+    animation: shift-up 5s cubic-bezier(0.9,-0.25,0.1,1.50) infinite alternate;
+}
+@keyframes shift-up {
+    10% {
+        transform: translate(0, 0);
+        background-color: rgba(0, 0, 0, 0.9);
+    }
+    90% {
+        transform: translate(0, -640px);
+        background-color: rgba(255, 255, 255, 0.9);        
+    }
+    100% {
+        transform: translate(0, -640px);
         background-color: rgba(255, 255, 255, 0.9);
     }
 }
 
 .seven {
-    animation: shift-left-up 4s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite alternate;
+    animation: shift-left-up 5s cubic-bezier(0.9,-0.25,0.1,1.50) infinite alternate;
 }
 @keyframes shift-left-up {
-    8% {
+    10% {
         transform: translate(0, 0);
         background-color: rgba(0, 0, 0, 0.9);
     }
-
-    92% {
+    90% {
         transform: translate(-320px, -320px);
         background-color: rgba(255, 255, 255, 0.9);        
     }
-
     100% {
         transform: translate(-320px, -320px);
         background-color: rgba(255, 255, 255, 0.9);
     }
+}
+
+.eight {
+    animation: shift-left 5s cubic-bezier(0.9,-0.25,0.1,1.50) infinite alternate;
+}
+@keyframes shift-left {
+    10% {
+        transform: translate(0, 0);
+        background-color: rgba(0, 0, 0, 0.9);
+    }
+    90% {
+        transform: translate(-640px, 0);
+        background-color: rgba(255, 255, 255, 0.9);        
+    }
+    100% {
+        transform: translate(-640px, 0);
+        background-color: rgba(255, 255, 255, 0.9);
+    }
+}
+
+.pause {
+    animation-play-state: paused;
 }
