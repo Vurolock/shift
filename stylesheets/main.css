@@ -16,7 +16,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    background: radial-gradient(rgb(62, 62, 62) 10%, black);
+    background: radial-gradient(rgb(62, 62, 62) 10%, black 120%);
 }
 
 header, footer {
@@ -30,8 +30,8 @@ header, footer {
 }
 
 header {
-    height: 50px;
-    background: linear-gradient(rgb(0, 0, 0), rgb(255, 255, 255) 150%);
+    height: 35px;
+    background: linear-gradient(rgb(0, 0, 0), rgb(255, 255, 255) 175%);
 }
 
 h1 {
@@ -43,6 +43,7 @@ h1 {
 
 footer {
     background: linear-gradient(rgb(255, 255, 255) -200%, rgb(0, 0, 0));
+    font-size: 12px;
 }
 
 .box {
@@ -71,10 +72,7 @@ footer {
 .button {
     width: 160px;
     height: 40px;
-    border-bottom-left-radius: 25%100%;
-    border-bottom-right-radius: 25%100%;
-    border-top-left-radius: 25%100%;
-    border-top-right-radius: 25%100%;
+    border-radius: 25% / 100%;
     background-color: black;
     color: rgb(160, 160, 160);
     font-family: 'Montserrat', sans-serif;
