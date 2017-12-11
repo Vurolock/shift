@@ -16,7 +16,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    background: radial-gradient(rgb(62, 62, 62) 10%, black);
+    background: radial-gradient(rgb(62, 62, 62) 10%, black 120%);
 }
 
 header, footer {
@@ -30,8 +30,8 @@ header, footer {
 }
 
 header {
-    height: 50px;
-    background: linear-gradient(rgb(0, 0, 0), rgb(255, 255, 255) 150%);
+    height: 35px;
+    background: linear-gradient(rgb(0, 0, 0), rgb(255, 255, 255) 175%);
 }
 
 h1 {
@@ -43,6 +43,7 @@ h1 {
 
 footer {
     background: linear-gradient(rgb(255, 255, 255) -200%, rgb(0, 0, 0));
+    font-size: 12px;
 }
 
 .box {
@@ -60,7 +61,29 @@ footer {
     height: 160px;
 }
 
-.button-zone {
+.big-row {
+    height: 480px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.big-image-container {
+    display: block;
+    height: 400px;
+}
+
+img {
+    height: 100%;
+    border-radius: 50%;
+  }
+
+  .nav-item {
+    display: block; 
+    height: 60px;
+  }
+
+/* .button-zone {
     width: 160px;
     height: 160px;
     display: flex;
@@ -71,10 +94,7 @@ footer {
 .button {
     width: 160px;
     height: 40px;
-    border-bottom-left-radius: 25%100%;
-    border-bottom-right-radius: 25%100%;
-    border-top-left-radius: 25%100%;
-    border-top-right-radius: 25%100%;
+    border-radius: 25% / 100%;
     background-color: black;
     color: rgb(160, 160, 160);
     font-family: 'Montserrat', sans-serif;
@@ -95,7 +115,7 @@ footer {
     display: flex;
     justify-content: space-evenly;
     text-align: center;
-}
+} */
 
 .circle {
     width: 160px;
@@ -103,6 +123,9 @@ footer {
     border: 1px solid rgb(0, 0, 0);
     border-radius: 50%;
     background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .placeholder {
@@ -287,7 +310,7 @@ footer {
     }
 }
 
-.one-color {
+/* .one-color {
     animation: shift-right-color 10s cubic-bezier(0.68, -0.55, 0.265, 1.55) infinite alternate;
 }
 @keyframes shift-right-color {
@@ -485,16 +508,16 @@ footer {
         transform: translate(0, 0);
         background-color: rgba(0, 0, 255, 0.9);
     }
-}
+} */
 
-.pause {
+/* .pause {
     animation-play-state: paused;
-}
+} */
 
-.hide {
+/* .hide {
     display: none;
 }
 
 .hold-place {
     display: block;
-}
+} */
